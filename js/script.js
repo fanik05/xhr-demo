@@ -7,7 +7,7 @@ function loadJokes(e) {
     const xhr = new XMLHttpRequest();
     const number = document.getElementById("numberOfJokes").value;
 
-    xhr.open("GET", `http://api.icndb.com/jokes/random/${number}`, true);
+    xhr.open("GET", `https://api.icndb.com/jokes/random/${number}`, true);
 
     xhr.onprogress = () => {
         document.getElementById("output").innerHTML = "<h3>Loading...</h3>";
